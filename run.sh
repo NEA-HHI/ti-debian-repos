@@ -29,7 +29,13 @@ mkdir -p ${builddir}
 package_name=$(cd ${debcontroldir} && dpkg-parsechangelog --show-field Source)
 deb_version=$(cd ${debcontroldir} && dpkg-parsechangelog --show-field Version)
 package_version=$(echo $deb_version | sed 's/\(.*\)-.*/\1/')
+
+# Get the git commit id
 last_tested_commit=$(echo $package_version | sed 's/.*+//')
+# If the format is gitYYYYMMDD.<commit>, extract just the commit part
+# This keeps compatibility with older "just the hash" versions
+last_tested_commit=${last_tested_commit#git????????.}  # strip 'gitYYYYMMDD.' prefix if present
+
 package_full="${package_name}-${package_version}"
 package_full_ll="${package_name}_${package_version}"
 echo "Building " $package_name " version " $deb_version
