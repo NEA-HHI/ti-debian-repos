@@ -1,3 +1,9 @@
+var-mii (1.0+git20250417.15d2847d22ff60a5a655d65164a8403d3063c9e5-1) UNRELEASED; urgency=medium
+
+  * Update to commit 15d2847d22ff60a5a655d65164a8403d3063c9e5
+
+ -- Nate Drude <nate.d@variscite.com>  Thu, 17 Apr 2025 16:43:52 -0500
+
 var-mii (1.0+18ba44d59193215e71ea30a9445067985f5c09e3-1) unstable; urgency=low
 
   * Initial release.
