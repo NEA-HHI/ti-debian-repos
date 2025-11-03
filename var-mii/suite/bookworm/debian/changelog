@@ -1,8 +1,12 @@
-var-mii (1.0+git20250417.15d2847d22ff60a5a655d65164a8403d3063c9e5-1) UNRELEASED; urgency=medium
+var-mii (1.0+git20251103.900186d5400de1a43fc5d55d63d5a8bfee271912-1) UNRELEASED; urgency=medium
 
+  [ Nate Drude ]
   * Update to commit 15d2847d22ff60a5a655d65164a8403d3063c9e5
 
- -- Nate Drude <nate.d@variscite.com>  Thu, 17 Apr 2025 16:43:52 -0500
+  [ Andre Morishita ]
+  * Update to commit 900186d5400de1a43fc5d55d63d5a8bfee271912
+
+ -- Andre Morishita <andre.m@variscite.com>  Mon, 03 Nov 2025 13:04:30 -0300
 
 var-mii (1.0+18ba44d59193215e71ea30a9445067985f5c09e3-1) unstable; urgency=low
 
