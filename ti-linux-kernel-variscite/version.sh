@@ -1,3 +1,3 @@
 #!/bin/bash
 
-export git_repo="https://github.com/varigit/ti-linux-kernel.git"
+export git_repo="git@github.com:NEA-HHI/ti-linux-kernel.git"
