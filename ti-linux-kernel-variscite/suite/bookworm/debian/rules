@@ -4,15 +4,15 @@ srctree ?= .
 
 build-indep:
 build-arch:
-	$(MAKE) -j 16 ARCH=arm64 KBUILD_BUILD_VERSION=1 LOCALVERSION=-k3-var4+43e00dff48261c00de447353550ead372e47f46b-1 -f $(srctree)/Makefile am62x_var_defconfig
-	$(MAKE) -j 16 ARCH=arm64 KBUILD_BUILD_VERSION=1 LOCALVERSION=-k3-var4+43e00dff48261c00de447353550ead372e47f46b-1 -f $(srctree)/Makefile
-	$(MAKE) -j 16 ARCH=arm64 KBUILD_BUILD_VERSION=1 LOCALVERSION=-k3-var4+43e00dff48261c00de447353550ead372e47f46b-1 -C $(srctree)/tools/spi/
+	$(MAKE) -j 16 ARCH=arm64 KBUILD_BUILD_VERSION=1 LOCALVERSION=-k3-var1+6a77d83c978d5a77304a0333a2d63eace9a960a6-1 -f $(srctree)/Makefile am62x_var_defconfig
+	$(MAKE) -j 16 ARCH=arm64 KBUILD_BUILD_VERSION=1 LOCALVERSION=-k3-var1+6a77d83c978d5a77304a0333a2d63eace9a960a6-1 -f $(srctree)/Makefile
+	$(MAKE) -j 16 ARCH=arm64 KBUILD_BUILD_VERSION=1 LOCALVERSION=-k3-var1+6a77d83c978d5a77304a0333a2d63eace9a960a6-1 -C $(srctree)/tools/spi/
 
 build: build-arch
 
 binary-indep:
 binary-arch: build-arch
-	$(MAKE) -j 16 ARCH=arm64 KBUILD_BUILD_VERSION=1 LOCALVERSION=-k3-var4+43e00dff48261c00de447353550ead372e47f46b-1 -f $(srctree)/Makefile intdeb-pkg
+	$(MAKE) -j 16 ARCH=arm64 KBUILD_BUILD_VERSION=1 LOCALVERSION=-k3-var1+6a77d83c978d5a77304a0333a2d63eace9a960a6-1 -f $(srctree)/Makefile intdeb-pkg
 
 clean:
 	rm -rf debian/files debian/linux-*
